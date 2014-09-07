@@ -5,5 +5,11 @@ package czarn.boardgamecomponets;
  */
 public abstract class Piece {
 
-    private Player owner;
+    private String ownerName;
+
+    public Piece(final String name) {
+        ownerName = name;
+    }
+
+    public String getOwnerName() { return ownerName; }
 }

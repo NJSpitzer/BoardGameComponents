@@ -10,4 +10,13 @@ public abstract class Card {
 
     private String cardTitle;
     private String cardText;
+
+    public Card(final String title, final String text) {
+        cardTitle = title;
+        cardText = text;
+    }
+
+    public String getCardTitle() { return cardTitle; }
+
+    public String getCardText() { return cardText; }
 }

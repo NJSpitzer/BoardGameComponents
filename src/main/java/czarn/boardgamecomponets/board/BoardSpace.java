@@ -14,11 +14,9 @@ import java.util.List;
  */
 public abstract class BoardSpace {
 
-    private List<Piece> pieces;
     private String spaceText;
 
     public BoardSpace(final String text) {
-        pieces = new ArrayList<Piece>();
         spaceText = text;
     }
 
@@ -29,10 +27,5 @@ public abstract class BoardSpace {
         return spaceText;
     }
 
-    /**
-     * Return the piece on the space
-     */
-    public Piece getPiece() {
-        return null;
-    }
+    public abstract Piece getPiece(final Player player);
 }

@@ -7,7 +7,7 @@ package czarn.boardgamecomponets;
  * Created by Nick on 8/30/2014.
  */
 public abstract class Player {
-
     private String name;
-    private int amountOfMoney;
+
+    public String getName() { return name; }
 }
